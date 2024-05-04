@@ -1,0 +1,76 @@
+.add-rooms {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 10%;
+}
+
+#add-rooms1  {
+  font-size: 24px;
+  font-family: Raleway; 
+  font-weight: bold;
+  color: white; 
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 12%;
+}
+
+.add-rooms form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-rooms label {
+  margin-bottom: 5px;
+}
+
+.add-rooms input[type="text"],
+.add-rooms input[type="date"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-rooms button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-rooms button:hover {
+  background-color: #0056b3;
+}
+
+.add-rooms {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(30%);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
