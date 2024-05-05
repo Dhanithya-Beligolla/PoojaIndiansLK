@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import './homescreen.css';
+import './homescreen.css';
 import homeBackground from '../../src/image/homeBackground.jpg';
+import NavBar from '../componentsTharushaReview/NavBar';
 
 function HomeScreen() {
     
     return (
         <div className="home-background-image" style={{ backgroundImage: `url(${homeBackground})` }}>
             <div>
+                
                 <h1>Discover A World Of Comfort</h1>
                 <h3>Let It Begin, Memories Never End.</h3>
                 <p>

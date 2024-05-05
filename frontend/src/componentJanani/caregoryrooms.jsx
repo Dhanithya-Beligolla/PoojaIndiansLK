@@ -1,12 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './categoryrooms.css'
+import NavBar from '../componentsTharushaReview/NavBar';
+import Foot from '../componentsTharushaReview/Foot';
 
 function CategoryRooms() {
 
     return (
+        <div>
+            <div>
+            <NavBar />  
+            </div>
+            
         <div className="category-rooms-container category-rooms-center category-rooms-dark-grey" style={{ padding: '128px 16px' }} id="pricing">
-            <h3>PACKAGES</h3>
+            
             <p className="category-rooms-large">Choose a pricing package fits your needs.</p>
             <div className="category-rooms-row-padding" style={{ marginTop: '64px', display: 'flex', justifyContent: 'center' }}>
             <div className="category-rooms-third category-rooms-section">
@@ -33,9 +40,9 @@ function CategoryRooms() {
                             <h2 className="category-rooms-wide">$ 500</h2>
                             <span className="category-rooms-opacity">per month</span>
                         </li> */}
-                        <li className="category-rooms-light-grey category-rooms-padding-24">
+                        
                             <Link to="/addrooms">Book Here</Link> {/* Wrap Sign Up button with Link */}
-                        </li>
+                        
                     </ul>
                 </div>
                 <div className="category-rooms-third category-rooms-section">
@@ -56,6 +63,8 @@ function CategoryRooms() {
                     </ul>
                 </div>
             </div>
+        </div>
+        <Foot/>
         </div>
     );
 }

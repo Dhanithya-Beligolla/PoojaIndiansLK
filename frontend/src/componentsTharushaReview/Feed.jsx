@@ -46,7 +46,7 @@ const { mutate, isLoading, isError } =useMutation(
        
       <div className='ml-[70px] mt-4 '>
         
-        <p className="text-custom-white ">{feedback}</p>
+        <p className="text-white ">{feedback}</p>
       </div>
     <div className="mt-4 ml-[800px] mb-5">
     <button className="text-white bg-red-500 p-2 rounded mr-2" onClick={() => mutate(_id)}><FaTrash/></button>
