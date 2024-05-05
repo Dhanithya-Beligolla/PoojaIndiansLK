@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaReact } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 const Foot = () => {
   return (
     <div>
@@ -10,7 +11,7 @@ const Foot = () => {
             <h2 className="text-lg font-semibold mb-4">About Us</h2>
             <p className="mb-4">Experience the finest dining experience with our exquisite dishes crafted by our world-renowned chefs.</p>
             <p>Visit us at:</p>
-            <address className="mt-2">123 Main Street City, State ZIP</address>
+            <address className="mt-2">Madiwela, Colombo, Western </address>
         </div>
        
         <div>
@@ -26,19 +27,24 @@ const Foot = () => {
         <div>
             <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
             <p className="mb-4">For reservations or inquiries, feel free to contact us:</p>
-            <p className="mb-2">Phone: +1 (123) 456-7890</p>
-            <p>Email: info@restaurant.com</p>
+            <p className="mb-2">Phone: +94 77 200 7888</p>
+            <p>Email: poojaindianfood@gmail.com</p>
         </div>
         
         <div>
             <h2 className="text-lg font-semibold mb-4">Follow Us</h2>
             <ul className="flex space-x-4">
-                <li><a href="#" className="text-xl text-white hover:text-blue-500"><i className="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://web.facebook.com/p/Pooja-Indian-Food-100054512437637/?_rdc=1&_rdr" className="text-xl text-white hover:text-blue-500"><i className="fab fa-facebook-square"></i></a></li>
                 <li><a href="#" className="text-xl text-white hover:text-blue-500"><i className="fab fa-twitter-square"></i></a></li>
                 <li><a href="#" className="text-xl text-white hover:text-blue-500"><i className="fab fa-instagram-square"></i></a></li>
             </ul>
             <div>
-            <button className="bg-blue-500 text-white px-4 py-2 rounded-full mt-4">Raise a ticket</button>
+           <Link to="/addcomplains">
+           <button className="bg-blue-500 text-white px-4 py-2 rounded-full mt-4" >Any Complains?</button>
+
+            </Link> 
+            <Link to="/applicants">           <button className="bg-blue-500 text-white px-4 py-2 rounded-full mt-4" >Apply your job</button>
+            </Link>
              </div>
         </div>
 
