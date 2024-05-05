@@ -27,7 +27,7 @@ const ReservationPDF = ({ reservation }) => {
         <Text style={styles.details}>Quantity: {reservation.quantity}</Text>
         <View style={styles.row}>
           <Text style={styles.details}>Subtotal:</Text>
-          <Text style={styles.details}>{reservation.price}</Text>
+          <Text style={styles.details}>LKR {reservation.price}</Text>
         </View>
         <View style={styles.row}>
           <Text style={styles.details}>Tax (10%):</Text>
@@ -35,7 +35,7 @@ const ReservationPDF = ({ reservation }) => {
         </View>
         <View style={styles.row}>
           <Text style={styles.total}>Total:</Text>
-          <Text style={styles.total}>{total.toFixed(2)}</Text>
+          <Text style={styles.total}>LKR {total.toFixed(2)}</Text>
         </View>
       </Page>
     </Document>

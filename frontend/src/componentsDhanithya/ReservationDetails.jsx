@@ -100,7 +100,7 @@ const ReservationDetails = () => {
                         padding: '10px 0'
                     }} className="bill-row">
                         <div style={{fontWeight: 'bold'}} className="bill-label">Price:</div>
-                        <div style={{textAlign: 'right'}} className="bill-value">{reservation.price}</div>
+                        <div style={{textAlign: 'right'}} className="bill-value">LKR {reservation.price}</div>
                     </div>
                 </div>
                 <div>

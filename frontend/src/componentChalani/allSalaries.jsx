@@ -1,6 +1,7 @@
 import {useState,useEffect } from 'react'
 import axios  from 'axios'
 import "./allSalaryStyle.css";
+import Header from './Header';
 
 
 
@@ -64,9 +65,9 @@ const calculateNetSalary = (e1) => {
 
     return(
         <>
-
+<div>
     
-    
+<Header/>
         <div className="container">
             <input
               className="srchinput"
@@ -136,7 +137,7 @@ const calculateNetSalary = (e1) => {
                             }
                         </tbody>
             </table>
-
+</div>
 </>
     )
 }

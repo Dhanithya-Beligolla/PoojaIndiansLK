@@ -24,7 +24,7 @@ function Header() {
             </li>
             
             <li>
-              <Link className="lnk active" to="repoartfinance">
+              <Link className="lnk active" to="/repoartfinance">
                Report 
               </Link>
             </li>

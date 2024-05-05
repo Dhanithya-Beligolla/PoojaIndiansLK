@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import "./updateSalary.css";
+import Header from './Header';
 
 function UpdateSalary() {
     const { id } = useParams();
@@ -73,6 +74,8 @@ function UpdateSalary() {
     };
 
     return (
+      <div>
+        <Header/>
         <div className='form-container'>
         <div className='update-container'>
 
@@ -254,7 +257,7 @@ function UpdateSalary() {
                     Update
                 </button></center>
           
-        </div></div>
+        </div></div></div>
     )
 }
 

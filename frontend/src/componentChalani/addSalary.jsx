@@ -1,6 +1,7 @@
 import  { useState,useEffect } from 'react'
 import "./addSalary.css";
-import axios from 'axios'
+import axios from 'axios';
+import Header from './Header';
 
 
 
@@ -45,7 +46,7 @@ function AddSalary(){
     return(
       <div>
       
-        
+        <Header/>
      
         
         <div className="container-form">

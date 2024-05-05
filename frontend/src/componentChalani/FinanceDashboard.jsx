@@ -2,6 +2,7 @@ import { useEffect, useState,useRef } from 'react'
 import axios from "axios"
 import './repoart.css'
 import {useReactToPrint} from 'react-to-print';
+import Header from './Header';
 
 function Repoart(){
     const [countlist,setcountlist]=useState([]);
@@ -33,8 +34,10 @@ const ComponentsRef=useRef();
     });
 
 
-    
+   
 return(
+    <div>
+        <Header/>
     <div className='repaor-finance'>
   <h3>Total salary Items:</h3>
             {countlist !== null ? (
@@ -98,7 +101,7 @@ paylist.map((e)=>{
                 
                 
           
-           
+      </div>     
 
     </div>
 )

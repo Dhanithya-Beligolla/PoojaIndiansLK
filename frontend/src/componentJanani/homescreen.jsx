@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import './homescreen.css';
+import './homescreen.css';
 import homeBackground from '../../src/image/homeBackground.jpg';
 
 function HomeScreen() {

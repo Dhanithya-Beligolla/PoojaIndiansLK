@@ -30,11 +30,27 @@ function NavLink() {
             style={{ maxHeight: '100px', justifyContent: 'space-between', }}
             navbarScroll
           >
-            <Nav.Link className='btnLink' href="/" >Home</Nav.Link>
-            {/* <Nav.Link className='btnLink' href="/Booking" >Booking</Nav.Link> */}
-            <Nav.Link className='btnLink' href="/ContactUs" >ContactUs</Nav.Link>
-            <Nav.Link className='btnLink' href="/Profile" >Profile</Nav.Link>
-            {localStorage.getItem("userRole") === "admin" && <Nav.Link className='btnLink' href="/AdminDashboard" >Admin Dashboard</Nav.Link>}
+            <Nav.Link className='btnLink' href="#" >Profile</Nav.Link>
+            {localStorage.getItem("userRole") === "user" && [
+            <Nav.Link className='btnLink' href="#" >ContactUs</Nav.Link>,
+            <Nav.Link className='btnLink' href="#" >PoojaIndians</Nav.Link>
+            ]}
+            
+            {localStorage.getItem("userRole") === "admin" && 
+              [
+                
+                
+                <Nav.Link className='btnLink' href="#" >Menu Management</Nav.Link>,
+                <Nav.Link className='btnLink' href="#" >Buffet Reservations</Nav.Link>,
+                <Nav.Link className='btnLink' href="#" >Buffet Page Management</Nav.Link>,
+                <Nav.Link className='btnLink' href="#" >Order Management</Nav.Link>,
+                <Nav.Link className='btnLink' href="#" >Complain Management</Nav.Link>,
+                <Nav.Link className='btnLink' href="#" >Financial Management</Nav.Link>,
+                <Nav.Link className='btnLink' href="#" >Room Reservation Management</Nav.Link>,
+                <Nav.Link className='btnLink' href="#" >Career Application Management</Nav.Link>, 
+                <Nav.Link className='btnLink' href="#" >Vacancy Post Managament</Nav.Link>,
+              ]
+            }
           </Nav>
           <Form className="d-flex">
             {

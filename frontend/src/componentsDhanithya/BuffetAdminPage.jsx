@@ -41,7 +41,7 @@ const BuffetAdminPage = ({ buffetAdmin}) =>{
         <img className="w-full h-[12rem] object-cover" src={image && folder + image} alt="buffetImg" />
         <div className="p-3 text-sm flex flex-col gap-1">
           <p className="text-gray-600"> {buffetDescription}</p>
-          <p className="text-gray-600">Per Person: {buffetPrice}</p>
+          <p className="text-gray-600">Per Person: LKR {buffetPrice}</p>
           <p className="text-gray-600">Offers Available: {specialOffers}</p>
         </div>
       
